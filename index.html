@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script src="js/ping_pong_game.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body onload="onLoad()">
+    <div class="container">
+      <div class="stoppers upper-stopper"></div>
+      <div class="upper-pad playing-pad">upper pad</div>
+      <div class="ball ball-to-lower-pad"></div>
+      <div class="divider"></div>
+      <div class="lower-pad playing-pad">lower pad</div>
+      <div class="stoppers lower-stopper"></div>
+      <h1 class="score-one">0</h1>
+      <h1 class="score-two">0</h1>
+    </div>
+    <div class="start-screen">
+      <h1>Ping Pong Game</h1>
+      <p>Press 'e' to Exit Game After, Game Started!</p>
+      <a id="s-p-link">Single Player</a>
+      <!-- s-p => s- Single p- Player  -->
+      <div id="single-player">
+        <h2>Instructions</h2>
+        <p>Press 'Enter' to start game</p>
+        <p>
+          To move playing-pad use, key 'A' to move left &amp; key 'D' to right.
+        </p>
+        <p>
+          You would be able to move both playing pads with same keys. <br />
+          Which pad is to move, decided by the ball. If ball is in upper court
+          the upper pad will move and same with lower pad.
+        </p>
+        <label for="player">Player Name :</label>
+        <input
+          type="text"
+          placeholder="Enter your Name..."
+          id="player"
+          required
+        />
+      </div>
+      <a id="t-p-link">Two Player</a>
+      <!-- t-p => t- Two p- Player  -->
+      <div id="two-player">
+        <h2>Instructions</h2>
+        <p>Press 'Enter' to start game.</p>
+        <p>
+          Player-1 : To move playing-pad use, key 'A' to move left &amp; key 'D'
+          to right.
+        </p>
+        <p>
+          Player-2 : To move playing-pad use, key 'J' to move left &amp; key 'L'
+          to right.
+        </p>
+        <label for="player1">Player 1 Name :</label>
+        <input
+          type="text"
+          placeholder="Enter your Name..."
+          id="player1"
+          required
+        />
+        <br />
+        <label for="player2">Player 2 Name :</label>
+        <input
+          type="text"
+          placeholder="Enter your Name..."
+          id="player2"
+          required
+        />
+      </div>
+      <button id="start-game-btn">Start</button>
+    </div>
+  </body>
+</html>
