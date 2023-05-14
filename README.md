@@ -1,5 +1,6 @@
 Ping Pong game: 
   with options Single Player and Two Player
+  
 How to play:
   Instruction is give on start screen page.
  
